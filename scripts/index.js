@@ -1,3 +1,5 @@
+import "../pages/index.css";
+
 'use strict';
 (function () {
     const cardsContainer = document.querySelector('.places-list');
