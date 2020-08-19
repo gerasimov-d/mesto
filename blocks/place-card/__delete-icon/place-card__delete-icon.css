@@ -1,0 +1,13 @@
+@import url(./_disable/place-card__delete-icon_disable.css);
+
+.place-card__delete-icon {
+  background: transparent url(../../../images/trash-icon.svg) no-repeat center;
+  border: none;
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  display: block;
+}
