@@ -18,7 +18,7 @@
     const userInfo = new UserInfo(userInfoElement);
 
     const api = new Api({
-        baseUrl: 'https://praktikum.tk/cohort12',
+        baseUrl: 'https://nomoreparties.co/cohort12',
         headers: {
             'Authorization': 'af6e789d-d03b-483c-bc22-6cb7c4fdbe44',
             'Content-Type': 'application/json'
@@ -128,11 +128,3 @@
         cardList.render(cards);
     }).catch((err) => console.log(err));
 })();
-
-/* REVIEW:
-
-Доброго времени суток!
-
-Все критические ошибки были исправлены, отличная работа! 
-Спасибо за усилия и старания, удачи в следующем спринте и успехов в дальнейшем обучении 
-*/
