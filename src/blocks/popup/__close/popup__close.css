@@ -1,0 +1,11 @@
+@import url(_type/popup__close_type_add.css);
+@import url(_type/popup__close_type_edit.css);
+@import url(_type/popup__close_type_image.css);
+
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}
