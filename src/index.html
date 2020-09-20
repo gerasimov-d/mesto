@@ -10,7 +10,7 @@
 <body>
 <div class="root">
   <header class="header root__section">
-    <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
+    <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
   </header>
 
   <div class="profile root__section">
@@ -31,7 +31,7 @@
 
   <div class="popup popup_type_add">
     <div class="popup__content">
-      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       <h3 class="popup__title">Новое место</h3>
       <form class="popup__form" name="new">
         <input type="text" name="name" class="popup__input" placeholder="Название" required minlength="2"
@@ -48,7 +48,7 @@
 
   <div class="popup popup_type_edit">
     <div class="popup__content">
-      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       <h3 class="popup__title">Редактировать профиль</h3>
       <form class="popup__form" name="edit">
         <input type="text" name="name" class="popup__input" placeholder="Имя" required minlength="2" maxlength="30">
@@ -63,14 +63,14 @@
 
   <div class="popup popup_type_image">
     <div class="popup__image-content">
-      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       <img src="" alt="" class="popup__image">
     </div>
   </div>
 
   <div class="popup popup_type_avatar">
     <div class="popup__content">
-      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       <h3 class="popup__title">Обновить аватар</h3>
       <form class="popup__form" name="edit">
         <input type="url" name="link" class="popup__input" placeholder="Ссылка на аватар" required>

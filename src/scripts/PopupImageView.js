@@ -1,3 +1,5 @@
+import Popup from "./Popup";
+
 class PopupImageView extends Popup {
     constructor(popupElement) {
         super(popupElement);

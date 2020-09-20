@@ -1,3 +1,5 @@
+import "./pages/index.css";
+
 import CardList from "./scripts/CardList";
 import PopupImageView from "./scripts/PopupImageView";
 import UserInfo from "./scripts/UserInfo";
@@ -7,6 +9,7 @@ import PopupEditProfile from "./scripts/PopupEditProfile";
 import PopupEditAvatar from "./scripts/PopupEditAvatar";
 import Card from "./scripts/Card";
 import PopupAddCard from "./scripts/PopupAddCard";
+import Popup from "./scripts/Popup";
 
 (function () {
     const cardsContainer = document.querySelector('.places-list');

@@ -22,11 +22,7 @@ module.exports = {
         },
             {
                 test: /.css$/i,
-                use: [
-                    isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "postcss-loader",
-                ],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
@@ -34,7 +30,9 @@ module.exports = {
                     "file-loader?name=./images/[name].[ext]",
                     {
                         loader: "image-webpack-loader",
-                        options: {},
+                        options: {
+                            esModule: false,
+                        }
                     },
                 ],
             },
@@ -46,7 +44,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'pages/style.[contenthash].css'
+            filename: 'style.[contenthash].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
