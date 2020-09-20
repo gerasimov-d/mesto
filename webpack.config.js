@@ -5,7 +5,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 
 module.exports = {
     entry: {
-        main: './index.js'
+        main: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -29,7 +29,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './index.html',
+            template: './src/index.html',
             filename: 'index.html'
         }),
         new WebpackMd5Hash()
