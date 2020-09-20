@@ -1,4 +1,5 @@
-'use strict';
+import PopupForm from "./PopupForm";
+
 class PopupEditAvatar extends PopupForm {
     constructor(popupElement, openButton, form, editAvatarCallBack) {
         super(popupElement, openButton, form);
@@ -28,3 +29,5 @@ class PopupEditAvatar extends PopupForm {
 
     }
 }
+
+export default PopupEditAvatar;

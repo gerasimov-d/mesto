@@ -1,4 +1,13 @@
-'use strict';
+import CardList from "./scripts/CardList";
+import PopupImageView from "./scripts/PopupImageView";
+import UserInfo from "./scripts/UserInfo";
+import Api from "./scripts/Api";
+import FormValidator from "./scripts/FormValidator";
+import PopupEditProfile from "./scripts/PopupEditProfile";
+import PopupEditAvatar from "./scripts/PopupEditAvatar";
+import Card from "./scripts/Card";
+import PopupAddCard from "./scripts/PopupAddCard";
+
 (function () {
     const cardsContainer = document.querySelector('.places-list');
     const userInfoElement = document.querySelector('.user-info');

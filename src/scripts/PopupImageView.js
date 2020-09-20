@@ -1,4 +1,3 @@
-'use strict';
 class PopupImageView extends Popup {
     constructor(popupElement) {
         super(popupElement);
@@ -14,3 +13,5 @@ class PopupImageView extends Popup {
         super.open();
     }
 }
+
+export default PopupImageView;

@@ -1,4 +1,5 @@
-'use strict';
+import Popup from "./Popup.js";
+
 class PopupForm extends Popup {
     constructor(popupElement, openButton, formValidator) {
         super(popupElement);
@@ -13,3 +14,5 @@ class PopupForm extends Popup {
         super.setEventListeners();
     }
 }
+
+export default PopupForm;
