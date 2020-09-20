@@ -1,4 +1,5 @@
-'use strict';
+import PopupForm from "./PopupForm";
+
 class PopupAddCard extends PopupForm {
     constructor(popupElement, openButton, form, addCardCallBack) {
         super(popupElement, openButton, form);
@@ -29,3 +30,5 @@ class PopupAddCard extends PopupForm {
             });
     }
 }
+
+export default PopupAddCard;

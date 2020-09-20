@@ -1,4 +1,3 @@
-'use strict';
 class FormValidator {
     constructor(formElement) {
         this.formElement = formElement;
@@ -58,3 +57,5 @@ class FormValidator {
         this.formElement.reset();
     }
 }
+
+export default FormValidator;

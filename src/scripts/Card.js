@@ -1,4 +1,3 @@
-'use strict';
 class Card {
     constructor(name,
                 link,
@@ -143,3 +142,5 @@ class Card {
         return this.cardElement;
     }
 }
+
+export default Card;

@@ -1,4 +1,5 @@
-'use strict';
+import PopupForm from "./PopupForm";
+
 class PopupEditProfile extends PopupForm {
     constructor(popupElement, openButton, formValidator, editProfileCallBack, getCurrentProfileData) {
         super(popupElement, openButton, formValidator);
@@ -35,3 +36,4 @@ class PopupEditProfile extends PopupForm {
     }
 }
 
+export default PopupEditProfile;

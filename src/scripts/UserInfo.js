@@ -1,4 +1,3 @@
-'use strict';
 class UserInfo {
     constructor(element) {
         this._nameElement = element.querySelector('.user-info__name');
@@ -41,3 +40,5 @@ class UserInfo {
         this._avatarElement.style.backgroundImage = `url(${this._avatarLink})`;
     }
 }
+
+export default UserInfo;

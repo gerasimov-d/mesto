@@ -80,3 +80,5 @@ class Api {
             .then(res => this.parseResponse(res));
     }
 }
+
+export default Api;

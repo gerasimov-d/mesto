@@ -1,4 +1,3 @@
-'use strict';
 class Popup {
     constructor(popupElement) {
         this._popupElement = popupElement;
@@ -18,3 +17,5 @@ class Popup {
         this._popupElement.classList.remove('popup_is-opened');
     }
 }
+
+export default Popup;

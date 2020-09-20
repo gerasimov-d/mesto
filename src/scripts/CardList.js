@@ -1,4 +1,3 @@
-'use strict';
 class CardList {
     constructor(cardContainer) {
         this._cardContainer = cardContainer;
@@ -12,3 +11,5 @@ class CardList {
         cards.forEach(item => this.addCard(item));
     }
 }
+
+export default CardList;
