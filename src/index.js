@@ -29,7 +29,7 @@ import PopupAddCard from "./scripts/PopupAddCard";
     const userInfo = new UserInfo(userInfoElement);
 
     const isDev = process.env.NODE_ENV === 'development';
-    const serverUrl = isDev ? 'http://praktikum.tk/cohort12' : 'https://praktikum.tk/cohort12';
+    const serverUrl = isDev ? 'https://nomoreparties.co/cohort12' : 'https://nomoreparties.co/cohort12';
 
     const api = new Api({
         baseUrl: serverUrl,
