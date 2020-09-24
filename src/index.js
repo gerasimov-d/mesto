@@ -9,7 +9,6 @@ import PopupEditProfile from "./scripts/PopupEditProfile";
 import PopupEditAvatar from "./scripts/PopupEditAvatar";
 import Card from "./scripts/Card";
 import PopupAddCard from "./scripts/PopupAddCard";
-import Popup from "./scripts/Popup";
 
 (function () {
     const cardsContainer = document.querySelector('.places-list');
@@ -29,8 +28,11 @@ import Popup from "./scripts/Popup";
     const cardList = new CardList(cardsContainer);
     const userInfo = new UserInfo(userInfoElement);
 
+    const isDev = process.env.NODE_ENV === 'development';
+    const serverUrl = isDev ? 'http://praktikum.tk/cohort12' : 'https://praktikum.tk/cohort12';
+
     const api = new Api({
-        baseUrl: 'https://nomoreparties.co/cohort12',
+        baseUrl: serverUrl,
         headers: {
             'Authorization': 'af6e789d-d03b-483c-bc22-6cb7c4fdbe44',
             'Content-Type': 'application/json'
